@@ -534,6 +534,7 @@ name = "kernel_with_bootloader"
 version = "0.1.0"
 dependencies = [
  "bootloader_api",
+ "noto-sans-mono-bitmap",
  "x86_64",
 ]
 
@@ -585,6 +586,12 @@ name = "memchr"
 version = "2.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "523dc4f511e55ab87b694dc30d0f820d60906ef06413f93d4d7a1385599cc149"
+
+[[package]]
+name = "noto-sans-mono-bitmap"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a27daf9557165efe1d09b52f97393bf6283cadb0a76fbe64a1061e15553a994a"
 
 [[package]]
 name = "os_with_bootloader"
