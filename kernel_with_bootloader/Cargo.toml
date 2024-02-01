@@ -9,3 +9,24 @@ edition = "2021"
 bootloader_api = "0.11"
 x86_64 = "0.14"
 noto-sans-mono-bitmap = "0.2" #for our framebuffer writer
+lazy_static = {version = "1.4", features = ["spin_no_std"]}
+spin = "0.9"
+good_memory_allocator = "0.1"
+nostd_async = "0.6" #single-threaded no_std async
+pic8259 = "0.10"
+pc-keyboard = "0.5"
+
+# try out multitasking executors
+
+# Below are for std
+#async-executor = "1.8"
+#futures-lite = "2.2"
+#async-task = "4.7"
+#async-lock = "3.3"
+#async-mutex = "1.4"
+# async-std = "1.12"
+
+# Below seems useful but all features are only available in std enviroment, with default-features set to true which is default
+# futures-intrusive = { version = "^0.5", default-features = false}
+# futures = { version = "0.3", default-features = false }
+
